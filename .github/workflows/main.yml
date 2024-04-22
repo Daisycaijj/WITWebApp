@@ -29,6 +29,6 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'WITWebApp918' # 确保这是你在Azure创建的Web App的名称
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} # 在GitHub secrets中配置的Azure发布配置文件
+        app-name: 'WITWebApp918' 
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} 
         package: .
