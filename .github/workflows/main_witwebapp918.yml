@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'WITWebApp918'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EB01E8B680C34E39A677E666B2837706 }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
