@@ -4,7 +4,7 @@ import pyodbc
 app = Flask(__name__)
 
 # 使用您的数据库连接字符串
-connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=tcp:sqldbsrv918.database.windows.net,1433;Initial Catalog=WITSQLDB;Persist Security Info=False;User ID=admin918;Password=Amber0918;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=tcp:sqldbsrv918.database.windows.net,1433;Initial Catalog=WITSQLDB_2024-04-23T06-38Z;Persist Security Info=False;User ID=admin918;Password=Amber0918;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
 
 @app.route('/')
 def index():
