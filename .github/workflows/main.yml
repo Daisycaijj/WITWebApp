@@ -15,7 +15,8 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11'  # 确保这个版本与你的项目兼容
+        python-version: '3.8'  # 或者你选择的其他版本
+
 
     - name: Install system dependencies for pyodbc
       run: sudo apt-get update && sudo apt-get install -y unixodbc-dev gcc g++ 
