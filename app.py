@@ -34,13 +34,3 @@ def register():
 
 if __name__ == '__main__':
     app.run()
-import os
-import pyodbc
-from flask import Flask, render_template, request, redirect, url_for
-
-app = Flask(__name__)
-
-# 从环境变量获取数据库连接字符串
-connection_string = os.getenv('DATABASE_URL')
-
-
