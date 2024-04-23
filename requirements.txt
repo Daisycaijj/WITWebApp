@@ -2,7 +2,7 @@ Flask
 mysql-connector-python
 jinja2
 werkzeug
-
+pyodbc
 
 
 
