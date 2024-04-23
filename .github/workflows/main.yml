@@ -15,9 +15,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11'
+        python-version: '3.11'  # 确保这个版本与你的项目兼容
 
-    - name: Install dependencies
+    - name: Install system dependencies for pyodbc
+      run: sudo apt-get update && sudo apt-get install -y unixodbc-dev gcc g++ 
+
+    - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
@@ -25,8 +28,9 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'WITWebApp918'
+        app-name: 'WITWebApp918'  # 你的 Azure Web 应用名称
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # 确保在您的 GitHub 仓库中设置了此密钥
         package: .
+
 
 
