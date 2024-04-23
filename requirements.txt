@@ -1,8 +1,8 @@
-Flask==2.0.3
-Werkzeug==2.0.3
-Jinja2==3.0.3
-mysql-connector-python==8.0.28
-pyodbc==4.0.32
+Flask
+Werkzeug
+Jinja2
+mysql-connector-python
+pyodbc
 
 
 
